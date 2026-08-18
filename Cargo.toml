@@ -1,0 +1,17 @@
+[package]
+name = "mangpai-bazi"
+version = "0.1.0"
+edition = "2021"
+description = "八字排盤與大運推算"
+license = "MIT"
+authors = ["Zients"]
+
+[dependencies]
+
+[[bin]]
+name = "bazi"
+path = "src/main.rs"
+
+[lib]
+name = "mangpai_bazi"
+path = "src/lib.rs"

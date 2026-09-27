@@ -6,7 +6,9 @@
 
 給 agent 一行緊湊 JSON；人要讀時自行 `| jq .`。零外部相依。
 
-後面會在同一倉放看盤 skill 與 reference。排盤是第一步：先有一張不算錯的盤，再讓 agent 按盲派手順去看。
+同倉的 `.agents/skills/` 已收錄盲派理法分析流程，`.claude/skills` 共用同一份。排盤先產生資料，再由 agent 按規則尋根、分賓主、查作用與做功，最後取象。
+
+完整入口：[mangpai-analysis](.agents/skills/mangpai-analysis/SKILL.md)。
 
 **僅供娛樂使用。** 不是專業命理諮詢，不構成任何決策依據。
 
